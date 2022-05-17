@@ -1,151 +1,151 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Sedona:catalog</title>
-  </head>
-  <body>
-    <header>
-      <nav>
+</head>
+<body>
+<header>
+    <nav>
         <ul class="menu">
-          <li><a href="#" class="menu__link">Информация</a></li>
-          <li><a href="#" class="menu__link">Фото и видео</a></li>
-          <li>
-            <a href="index.html" class="menu__logo"
-              ><img src="https://via.placeholder.com/138x70" alt="Логотип"
-            /></a>
-          </li>
-          <li><a href="#" class="menu__link">Карта штата</a></li>
-          <li><a href="catalog.html" class="menu__link">Гостиница</a></li>
+            <li><a href="#" class="menu__link">Информация</a></li>
+            <li><a href="#" class="menu__link">Фото и видео</a></li>
+            <li>
+                <a href="index.html" class="menu__logo"
+                ><img src="https://via.placeholder.com/138x70" alt="Логотип"
+                /></a>
+            </li>
+            <li><a href="#" class="menu__link">Карта штата</a></li>
+            <li><a href="catalog.html" class="menu__link">Гостиница</a></li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
+    </nav>
+</header>
+<main>
+    <section>
         <form>
-          <div>
-            <p>Инфраструктура:</p>
+            <div>
+                <p>Инфраструктура:</p>
+                <ul>
+                    <li>
+                        <label><input type="checkbox"/>Бассейн</label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"/>Парковка</label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"/>Wi-Fi</label>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>Тип жилья:</p>
+                <ul>
+                    <li>
+                        <label><input type="checkbox"/>Гостиница</label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"/>Мотель</label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"/>Апартаменты</label>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div>Стоимость в сутки, ₽:</div>
+                <!--              Блок с двойным ползунком -->
+                <div>
+                    <div>
+                        <div></div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <button type="submit">Показать</button>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <div>
+            <h2>Найдено: 3</h2>
+            <label>Сортировка:</label>
             <ul>
-              <li>
-                <label><input type="checkbox" />Бассейн</label>
-              </li>
-              <li>
-                <label><input type="checkbox" />Парковка</label>
-              </li>
-              <li>
-                <label><input type="checkbox" />Wi-Fi</label>
-              </li>
+                <li>По цене</li>
+                <li>По типу</li>
+                <li>По рейтингу</li>
             </ul>
-          </div>
-          <div>
-            <p>Тип жилья:</p>
-            <ul>
-              <li>
-                <label><input type="checkbox" />Гостиница</label>
-              </li>
-              <li>
-                <label><input type="checkbox" />Мотель</label>
-              </li>
-              <li>
-                <label><input type="checkbox" />Апартаменты</label>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <div>Стоимость в сутки, ₽:</div>
-            <!--              Блок с двойным ползунком -->
 
             <div>
-              <div>
-                <div></div>
-              </div>
-              <div></div>
-              <div></div>
+                <div>"стрелка вверх"</div>
+                <div>"стрелка вниз"</div>
             </div>
-            <button type="submit">Показать</button>
-          </div>
-        </form>
-      </section>
-
-      <section>
-        <div>
-          <h2>Найдено: 3</h2>
-          <label>Сортировка:</label>
-          <ul>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По рейтингу</li>
-          </ul>
-
-          <div>
-            <div>"стрелка вверх"</div>
-            <div>"стрелка вниз"</div>
-          </div>
         </div>
         <div>
-          <img src="https://via.placeholder.com/135x90" alt="гостиница" />
-          <div>
-            <h4>Amara Resort & Spa</h4>
-            <span>Гостиница</span>
-            <span>От 4000 ₽</span>
-            <button type="submit">Подробнее</button>
-            <button type="submit">Забронировать</button>
-          </div>
-          <div>
-            <span>****</span>
-            <div>Рейтинг: 8,5</div>
-          </div>
+            <img src="https://via.placeholder.com/135x90" alt="гостиница"/>
+            <div>
+                <h4>Amara Resort & Spa</h4>
+                <span>Гостиница</span>
+                <span>От 4000 ₽</span>
+                <button type="submit">Подробнее</button>
+                <button type="submit">Забронировать</button>
+            </div>
+            <div>
+                <span>****</span>
+                <div>Рейтинг: 8,5</div>
+            </div>
         </div>
         <div>
-          <img src="https://via.placeholder.com/135x90" alt="гостиница" />
-          <div>
-            <h4>Desert Quail Inn</h4>
-            <span>Мотель</span>
-            <span>От 3000 ₽</span>
-            <button type="submit">Подробнее</button>
-            <button type="submit">Забронировать</button>
-          </div>
-          <div>
-            <span>***</span>
-            <div>Рейтинг: 8,9</div>
-          </div>
+            <img src="https://via.placeholder.com/135x90" alt="гостиница"/>
+            <div>
+                <h4>Desert Quail Inn</h4>
+                <span>Мотель</span>
+                <span>От 3000 ₽</span>
+                <button type="submit">Подробнее</button>
+                <button type="submit">Забронировать</button>
+            </div>
+            <div>
+                <span>***</span>
+                <div>Рейтинг: 8,9</div>
+            </div>
         </div>
         <div>
-          <img src="https://via.placeholder.com/135x90" alt="гостиница" />
-          <div>
-            <h4>Villas at Poco Diablo</h4>
-            <span>Гостиница</span>
-            <span>От 2000 ₽</span>
-            <button type="submit">Подробнее</button>
-            <button type="submit">Забронировать</button>
-          </div>
-          <div>
-            <span>**</span>
-            <div>Рейтинг: 9,2</div>
-          </div>
+            <img src="https://via.placeholder.com/135x90" alt="гостиница"/>
+            <div>
+                <h4>Villas at Poco Diablo</h4>
+                <span>Гостиница</span>
+                <span>От 2000 ₽</span>
+                <button type="submit">Подробнее</button>
+                <button type="submit">Забронировать</button>
+            </div>
+            <div>
+                <span>**</span>
+                <div>Рейтинг: 9,2</div>
+            </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <section>
+    </section>
+</main>
+<footer>
+    <section>
         <div>
-          <span>#visitSEDONA</span>
-          <a href="tel:78005558628">+7 800 555-86-28</a>
+            <span>#visitSEDONA</span>
+            <a href="tel:78005558628">+7 800 555-86-28</a>
         </div>
         <div class="social">
-          <a class="social__link" href="#">
-            <div class="social__icon">TW</div>
-          </a>
-          <a class="social__link" href="#">
-            <div class="social__icon">FB</div>
-          </a>
-          <a class="social__link" href="#">
-            <div class="social__icon">YT</div>
-          </a>
+            <a class="social__link" href="#">
+                <div class="social__icon">TW</div>
+            </a>
+            <a class="social__link" href="#">
+                <div class="social__icon">FB</div>
+            </a>
+            <a class="social__link" href="#">
+                <div class="social__icon">YT</div>
+            </a>
         </div>
         <div>HTML Academy</div>
-      </section>
-    </footer>
-  </body>
+    </section>
+</footer>
+</body>
 </html>
