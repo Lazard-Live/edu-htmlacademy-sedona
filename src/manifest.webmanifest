@@ -1,0 +1,10 @@
+{
+  "name": "SEDONA",
+  "icons": [{
+    "src": "img/favicon/32.svg",
+    "sizes": "32x32"
+  },  {
+    "src": "img/favicon/152.svg",
+    "sizes": "152x152"
+  }]
+}
