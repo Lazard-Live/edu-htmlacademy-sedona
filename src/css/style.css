@@ -1,12 +1,14 @@
 /* global */
 :root {
     --text-color: #000;
+    --text-gray-color: #666;
     --blue-color: #81B3D2;
     --blue-color-hover: #669EC0;
     --blue-color-focus: #5496BD;
     --gray-color: #eee;
     --gray-color-active: #BDBBBC;
-    --page-gray-color: #F2F2F2;
+    --gray-color-btn: #CACACA;
+    --gray-color-bg: #F2F2F2;
     --wrapper-shadow-color: rgba(0, 1, 1, 1);
     --brown-color: #766357;
     --brown-color-hover: #604E43;
@@ -39,7 +41,7 @@
     margin: 0;
     padding: 0;
     font-family: var(--primary-font);
-    background: var(--page-gray-color);
+    background: var(--gray-color-bg);
     font-size: 14px;
     line-height: 27px;
     text-transform: uppercase;
@@ -81,14 +83,35 @@
 }
 
 .button {
-    width: 568px;
-    height: 86px;
     color: var(--white-color);
     list-style-type: none;
     font-size: 21px;
     font-weight: 700;
+    text-decoration: none;
     text-transform: uppercase;
     border: none;
+}
+
+.button__md {
+    height: 27px;
+}
+
+.button__lg {
+    width: 568px;
+    height: 86px;
+}
+
+.button_blue {
+    background-color: var(--blue-color);
+}
+
+.button_blue:hover {
+    background: var(--blue-color-hover);
+}
+
+.button_blue:active {
+    background: var(--blue-color-focus);
+    color: var(--white-color-active);
 }
 
 .button_brown {
@@ -388,7 +411,8 @@
     left: 50%;
     height: 22px;
     content: "";
-    border: 1px solid #ffffff;}
+    border: 1px solid #ffffff;
+}
 
 .cost-control__label {
     display: inline-block;
@@ -459,6 +483,192 @@
     line-height: 20px;
 }
 
+.sort {
+    padding: 28px 73px;
+    box-sizing: border-box;
+    height: 86px;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    border-bottom: 2px solid var(--gray-color);
+}
+
+.sort__title {
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+}
+
+.sort__nav {
+    padding-top: 3px;
+    display: inline-flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    flex-grow: 1;
+}
+
+.sort__nav-title {
+    padding-left: 46px;
+    height: 18px;
+}
+
+.sort__nav-list {
+    padding-left: 35px;
+    margin: 0;
+    height: 18px;
+    display: inline-flex;
+    list-style-type: none;
+    line-height: 18px;
+}
+
+.sort__nav-item {
+    display: block;
+    padding-right: 21px;
+    line-height: 20px;
+}
+
+.sort__nav-page {
+    display: block;
+    position: relative;
+    top: 4px;
+    left: 8px;
+}
+
+.sort__btn {
+    color: var(--gray-color-btn);
+    fill: var(--gray-color-btn);
+    height: 18px;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: 1px dotted var(--blue-color);
+}
+
+.sort__btn:hover {
+    color: var(--blue-color-hover);
+    fill: var(--blue-color-hover);
+    border-bottom: none;
+}
+
+.sort__btn:active,
+.sort__btn_active {
+    color: var(--blue-color-hover);
+    fill: var(--blue-color-hover);
+    border: none;
+}
+
+.sort__btn_border-none {
+    border-bottom: none;
+}
+
+.hotel {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel__column {
+    padding: 0 73px;
+    height: 150px;
+    display: flex;
+    flex-grow: 1;
+    line-height: 27px;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.hotel__link {
+    padding-top: 30px;
+    display: block;
+}
+
+.hotel__img {
+    width: 135px;
+    height: 90px;
+}
+
+.hotel__img_ars {
+    background: url("../img/catalog/hotels/amara-resort-&-spa.png") no-repeat;
+}
+
+.hotel__img_dqi {
+    background: url("../img/catalog/hotels/desert-quail-inn.png") no-repeat;
+}
+
+.hotel__img_vapd {
+    background: url("../img/catalog/hotels/villas-at-poco-diablo.png") no-repeat;
+}
+
+.hotel__info {
+    flex-grow: 1;
+    padding: 24px 30px 0;
+}
+
+.info__main {
+    display: grid;
+    grid-template: 1fr 1fr / min-content min-content;
+    grid-gap: 13px 6px;
+}
+
+.info__link {
+    text-decoration: none;
+}
+
+.info__title {
+    padding-bottom: 5px;
+    line-height: 24px;
+}
+
+.info__title:hover {
+    color: var(--blue-color-hover);
+}
+
+.info__title:focus {
+    color: var(--brown-color);
+}
+
+.info__title:active {
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+.info__button {
+    font-size: 14px;
+    padding: 0 16px;
+}
+
+.hotel__rate {
+    padding: 28px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rate__wrap {
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.rate__star {
+    padding-left: 5px;
+    width: 18px;
+    height: 18px;
+    fill: var(--blue-color);
+}
+
+.rate__user-rate {
+    color: var(--text-gray-color);
+    text-align: right;
+    padding-right: 12px;
+    width: 98px;
+    height: 27px;
+    background-color: var(--gray-color-bg);
+}
+
 /*----*/
 .page-footer {
     width: 100%;
@@ -480,6 +690,7 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+    align-items: center;
     font-size: 21px;
     font-weight: 700;
     padding-right: 8px;
