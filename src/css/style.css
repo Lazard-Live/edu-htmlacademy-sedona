@@ -1,6 +1,6 @@
 /* global */
 :root {
-    --text-color: #000;
+    --black-color: #000;
     --text-gray-color: #666;
     --blue-color: #81B3D2;
     --blue-color-hover: #669EC0;
@@ -127,7 +127,7 @@
     color: var(--white-color-active);
 }
 
-/* page-header */
+/* header страницы */
 .logo {
     position: absolute;
     z-index: 1;
@@ -175,7 +175,7 @@
 
 .nav__link {
     font-weight: 700;
-    color: var(--text-color);
+    color: var(--black-color);
     text-decoration: none;
 }
 
@@ -188,11 +188,11 @@
 }
 
 .nav__link:active {
-    color: var(--text-color);
+    color: var(--black-color);
     opacity: 0.5;
 }
 
-/*main-header*/
+/*-- первый блок index.html --*/
 .intro {
     position: relative;
     height: 508px;
@@ -228,6 +228,7 @@
     padding-bottom: 51px;
 }
 
+/*-- сетка шагов index.html --*/
 .steps {
     display: grid;
     grid-template: 256px 330px 256px 256px / repeat( 3, 1fr);
@@ -293,7 +294,7 @@
     padding-bottom: 38px;
 }
 
-.interesting {
+.interesting {position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -314,12 +315,109 @@
     padding-bottom: 42px;
 }
 
+/*-- форма поиска index.html--*/
+.search-hotel {
+    padding: 50px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    width: 568px;
+    height: 395px;
+    background-color: var(--white-color);
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.search-hotel__row {
+    position: relative;
+    padding: 15px 0;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.search-hotel__title {
+    padding-right: 30px;
+    font-size: 14px;
+}
+
+
+.search-hotel__input {
+    box-sizing: border-box;
+    height: 38px;
+    padding: 0 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var(--gray-color-bg);
+    border: none;
+}
+
+.search-hotel__input_date {
+    width: 346px;
+}
+
+.search-hotel__input_count {
+    position: relative;
+    text-align: center;
+    width: 114px;
+}
+
+.search-hotel__btm{
+    box-sizing: border-box;
+    padding: 15px;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.search-hotel__btm_minus {
+    right: 76px;
+}
+
+.search-hotel__btm_plus {
+    right: 0;
+}
+
+.search-hotel__date-icon {
+    position: absolute;
+    right: 8px;
+    width: 21px;
+    height: 22px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.search-hotel__wrap {
+    width: 100%;
+    display: inline-flex;
+}
+
+.search-hotel__wrap .search-hotel__row {
+    justify-content: space-between;
+}
+
+.search-hotel__wrap .search-hotel__row_padding-left {
+    justify-content: flex-end;
+}
+
+.search-hotel__button {
+    width: 100%;
+    height: 58px;
+}
+
+
+/*-- footer index.html с картой --*/
 .main-footer {
+    display: flex;
+    justify-content: center;
     height: 594px;
     background: url("../img/content/map.png") no-repeat;
 }
 
-/*-- filter --*/
+/*-- filter catalog.html --*/
 
 .head-filter {
     box-sizing: border-box;
@@ -347,6 +445,10 @@
 
 .head-filter input[type="checkbox"]:checked + label::before {
     content: url("../img/catalog/checkbox/on.svg");
+}
+
+.head-filter input[type="checkbox"]:disabled + label::before {
+    opacity: 0.5;
 }
 
 .head-filter input[type="checkbox"] + label {
@@ -463,7 +565,12 @@
     border: 8px solid #ffffff;
     border-radius: 50%;
     background: #ababab;
-    box-shadow: 0 2px 1px 0 rgb(0 1 1 / 20%);
+    box-shadow: 0 2px 1px 0 rgb(0 1 1 / 50%);
+}
+
+.cost-control__range-toggle:hover {
+    top: -11px;
+    border: 10px solid #ffffff;
 }
 
 .cost-control__range-toggle_max {
@@ -483,6 +590,17 @@
     line-height: 20px;
 }
 
+.filter__button:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.filter__button:active {
+    background-color: var(--gray-color);
+}
+
+
+/*-- Сортировка catalog.html --*/
 .sort {
     padding: 28px 73px;
     box-sizing: border-box;
@@ -490,7 +608,6 @@
     width: 100%;
     display: inline-flex;
     flex-wrap: nowrap;
-    border-bottom: 2px solid var(--gray-color);
 }
 
 .sort__title {
@@ -563,6 +680,11 @@
     border-bottom: none;
 }
 
+.sort__btn_black-hover:hover {
+    fill: var(--black-color);
+}
+
+/*-- cекция вывода отелей --*/
 .hotel {
     box-sizing: border-box;
     width: 100%;
@@ -570,12 +692,16 @@
     flex-direction: column;
 }
 
-.hotel__column {
+.hotel__row {
     padding: 0 73px;
     height: 150px;
     display: flex;
     flex-grow: 1;
     line-height: 27px;
+    border-top: 1px solid var(--gray-color);
+}
+
+.hotel__row:last-child {
     border-bottom: 1px solid var(--gray-color);
 }
 
@@ -630,7 +756,7 @@
 }
 
 .info__title:active {
-    color: var(--text-color);
+    color: var(--black-color);
     opacity: 0.5;
 }
 
@@ -669,7 +795,7 @@
     background-color: var(--gray-color-bg);
 }
 
-/*----*/
+/*-- footer страницы --*/
 .page-footer {
     width: 100%;
     line-height: 26px;
@@ -701,7 +827,7 @@
 }
 
 .contacts__phone {
-    color: var(--text-color);
+    color: var(--black-color);
     text-decoration: none;
     padding-bottom: 36px;
 }
@@ -762,6 +888,6 @@
 }
 
 .developer__link:active {
-    fill: var(--text-color);
+    fill: var(--black-color);
     opacity: 0.5;
 }
