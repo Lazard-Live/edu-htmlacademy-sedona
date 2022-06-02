@@ -331,14 +331,20 @@
 
 /*-- форма поиска index.html--*/
 .search-hotel {
+    z-index: 1;
+    transition: ease 0.5s;
     padding: 50px;
     box-sizing: border-box;
     position: absolute;
-    top: 100%;
-    width: 568px;
+    top: -395px;
     height: 395px;
+    width: 568px;
     background-color: var(--white-color);
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.search-hotel_active {
+    top: 0;
 }
 
 .search-hotel input[type=date]::-webkit-calendar-picker-indicator {
@@ -433,6 +439,8 @@
 
 /*-- footer index.html с картой --*/
 .main-footer {
+    overflow: hidden;
+    position: relative;
     display: flex;
     justify-content: center;
     height: 594px;

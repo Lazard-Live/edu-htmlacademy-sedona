@@ -103,9 +103,11 @@
             </h2>
             <p class="subtitle interesting__subtitle">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
                 предложения гостиниц в седоне</p>
-            <button class="button button__lg button_brown">ПОИСК ГОСТИНИЦЫ В седоне</button>
+            <button class="button button__lg button_brown" id="show-form">ПОИСК ГОСТИНИЦЫ В седоне</button>
+        </section>
 
-            <form id="search-hotel" class="search-hotel" method="post" action="https://echo.htmlacademy.ru">
+        <footer class="main-footer">
+            <form id="search-hotel" class="search-hotel search-hotel_active" method="post" action="https://echo.htmlacademy.ru">
                 <div class="search-hotel__row">
                     <label class="title search-hotel__title">
                         Дата выезда:
@@ -200,9 +202,7 @@
                     <button class="button button_blue search-hotel__button" form="search-hotel">НАЙТИ</button>
                 </div>
             </form>
-        </section>
-
-        <footer class="main-footer">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac20449dc476053ec923e67679372bd9ce2e365bf9ef74fed2821ad3377e39c72&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
         </footer>
     </main>
 
@@ -252,5 +252,6 @@
         </div>
     </footer>
 </div>
+<script src="js/js.js"></script>
 </body>
 </html>
