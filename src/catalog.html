@@ -26,23 +26,23 @@
     </header>
 
     <main class="content">
-        <form class="head-filter" action="#" method="post">
+        <form id="head-filter" class="head-filter" method="post" action="https://echo.htmlacademy.ru">
             <div class="infrastructure">
                 <h2 class="title infrastructure__title">Инфраструктура:</h2>
-                <input type="checkbox" value="бассейн" id="checkbox01" checked>
+                <input type="checkbox" value="бассейн" id="checkbox01" form="head-filter" name="inf-pool" checked>
                 <label class="infrastructure__item" for="checkbox01">БАССЕЙН</label>
-                <input type="checkbox" value="паркинг" id="checkbox02" disabled>
+                <input type="checkbox" value="паркинг" id="checkbox02" form="head-filter" name="inf-parking">
                 <label class="infrastructure__item" for="checkbox02">Парковка</label>
-                <input type="checkbox" value="wi-fi" id="checkbox03">
+                <input type="checkbox" value="wi-fi" id="checkbox03" form="head-filter" name="inf-wifi">
                 <label class="infrastructure__item" for="checkbox03">Wi-Fi</label>
             </div>
             <div class="house-type">
                 <h2 class="title house-type__title">Тип жилья:</h2>
-                <input type="checkbox" value="гостиница" id="checkbox04">
+                <input type="checkbox" value="гостиница" id="checkbox04" form="head-filter" name="ht-hotel">
                 <label class="house-type__item" for="checkbox04">Гостиница</label>
-                <input type="checkbox" value="Мотель" id="checkbox05">
+                <input type="checkbox" value="Мотель" id="checkbox05" form="head-filter" name="inf-motel">
                 <label class="house-type__item" for="checkbox05">Мотель</label>
-                <input type="checkbox" value="Апартаменты" id="checkbox06">
+                <input type="checkbox" value="Апартаменты" id="checkbox06" form="head-filter" name="inf-apartments">
                 <label class="house-type__item" for="checkbox06">Апартаменты</label>
             </div>
             <div class="cost">
@@ -55,14 +55,18 @@
                                   type="text"
                                   name="from"
                                   value="0"
-                                  id="from-value">
+                                  id="from-value"
+                                  form="head-filter"
+                            >
                     </label>
                     <label class="cost-control__label cost-control__label_to">
                         До <input class="cost-control__input"
                                   type="text"
                                   name="to"
                                   value="3000"
-                                  id="to-value">
+                                  id="to-value"
+                                  form="head-filter"
+                            >
                     </label>
                 </div>
                 <div class="cost-control__range">
@@ -72,7 +76,7 @@
                     <div class="cost-control__range-toggle"></div>
                     <div class="cost-control__range-toggle cost-control__range-toggle_max"></div>
                 </div>
-                <button class="filter__button" type="button" name="show">Показать</button>
+                <button class="filter__button" form="head-filter">Показать</button>
             </div>
         </form>
 
