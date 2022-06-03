@@ -13,7 +13,11 @@
 <body class="page__body">
 <div class="wrapper">
     <header class="page-header">
-        <a href="index.html" class="logo"></a>
+        <a href="index.html" class="logo">
+            <div class="visually-hidden">
+                Логотип Седоны
+            </div>
+        </a>
 
         <nav class="nav">
             <ul class="nav__list">
@@ -26,9 +30,11 @@
     </header>
 
     <main class="content">
+        <h1 class="visually-hidden">Страница каталога отелей</h1>
         <form id="head-filter" class="head-filter" method="post" action="https://echo.htmlacademy.ru">
+            <h2 class="visually-hidden">Форма фильтрации отелей</h2>
             <div class="infrastructure">
-                <h2 class="title infrastructure__title">Инфраструктура:</h2>
+                <h3 class="title infrastructure__title">Инфраструктура:</h3>
                 <input type="checkbox" value="бассейн" id="checkbox01" form="head-filter" name="inf-pool" checked>
                 <label class="infrastructure__item" for="checkbox01">БАССЕЙН</label>
                 <input type="checkbox" value="паркинг" id="checkbox02" form="head-filter" name="inf-parking">
@@ -37,7 +43,7 @@
                 <label class="infrastructure__item" for="checkbox03">Wi-Fi</label>
             </div>
             <div class="house-type">
-                <h2 class="title house-type__title">Тип жилья:</h2>
+                <h3 class="title house-type__title">Тип жилья:</h3>
                 <input type="checkbox" value="гостиница" id="checkbox04" form="head-filter" name="ht-hotel">
                 <label class="house-type__item" for="checkbox04">Гостиница</label>
                 <input type="checkbox" value="Мотель" id="checkbox05" form="head-filter" name="inf-motel">
@@ -46,9 +52,9 @@
                 <label class="house-type__item" for="checkbox06">Апартаменты</label>
             </div>
             <div class="cost">
-                <h2 class="title cost__title">
+                <h3 class="title cost__title">
                     Стоимость в сутки, ₽:
-                </h2>
+                </h3>
                 <div class="cost-control">
                     <label class="cost-control__label cost-control__label_from">
                         От <input class="cost-control__input"
@@ -81,6 +87,7 @@
         </form>
 
         <section class="sort">
+            <h2 class="visually-hidden">Секция сортировки найденных отелей</h2>
             <div class="title sort__title">Найдено: 3</div>
             <div class="sort__nav">
                 <div class="sort__nav-title">Сортировка:</div>
@@ -112,6 +119,7 @@
             </div>
         </section>
         <section class="hotel">
+            <h2 class="visually-hidden">Секция вывода результатов фильтрации и сортировки отелей</h2>
             <div class="hotel__row">
                 <a class="hotel__link" href="#">
                     <div class="hotel__img hotel__img_ars">
@@ -233,7 +241,9 @@
     </main>
 
     <footer class="page-footer">
+        <h2 class="visually-hidden">Подвал сайта</h2>
         <div class="contacts">
+            <h3 class="visually-hidden">Контакты</h3>
             <div class="contacts__hashtag">
                 #visitSEDONA
             </div>
@@ -242,6 +252,7 @@
             </a>
         </div>
         <div class="social">
+            <h3 class="visually-hidden">Социальные сети</h3>
             <a class="social__link">
                 <svg class="social__icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z"
@@ -262,6 +273,7 @@
             </a>
         </div>
         <div class="developer">
+            <h3 class="visually-hidden">Разработчик</h3>
             Website by
             <a href="https://htmlacademy.ru/intensive/htmlcss" class="developer__link">
                 <svg viewBox="0 0 115 33" xmlns="http://www.w3.org/2000/svg">
